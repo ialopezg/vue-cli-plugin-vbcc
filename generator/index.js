@@ -37,8 +37,8 @@ function getContentMain(appFile) {
     return parseDOM(replaceEnv(contentMain))
 }
 
-function writeConfig(configUncleFile, contentMain) {
-    fs.writeFileSync(configUncleFile, "module.exports = {\n\txmlConfig: `"+contentMain+"`,\n}", { encoding: 'utf-8' })
+function writeConfig(configFile, contentMain) {
+    fs.writeFileSync(configFile, "module.exports = {\n\txmlConfig: `"+contentMain+"`,\n}", { encoding: 'utf-8' })
 }
 
 function parsePath(path) {
@@ -164,17 +164,29 @@ function prettifyXML(xmlText) {
 }
 
 function appLoop() {
-    const configFile = path.resolve('./app.config.js')
     load()
     const contentMain = getContentMain(appFile)
     parseModules(contentMain)
     parseReplace(contentMain)
     parseAppend(contentMain)
     parsePrepend(contentMain)
-    writeConfig(configFile, prettifyXML(contentMain.html()))
+    writeConfig(path.resolve('./app.config.js'), prettifyXML(contentMain.html()))
 }
 
-module.exports = () => {
+module.exports = (api, options, rootOptions) => {
+    const vueBCCPlugin = api.hasPlugin('vue-bcc')
+    if (!vueBCCPlugin) {
+        api.extendPackage({
+            dependencies: {
+                'vue-bcc': 'https://github.com/ialopezg/vue-bcc.git'
+            },
+        })
+    }
+
+    api.render('./template', {
+        ...options
+    })
+
     watchFile(appFile, () => {
         appLoop()
     })

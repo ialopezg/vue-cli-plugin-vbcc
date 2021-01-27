@@ -9,6 +9,7 @@ import {
     FilterFieldAbstractComponent,
     FilterFieldResourceComponent,
     FormComponent,
+    FormFieldComponent,
     VueBCCPlugin,
 } from 'vue-bcc/index'
 
@@ -19,8 +20,12 @@ Vue.component('FilterFieldComponent', FilterFieldComponent)
 Vue.component('FilterFieldAbstractComponent', FilterFieldAbstractComponent)
 Vue.component('FilterFieldResourceComponent', FilterFieldResourceComponent)
 Vue.component('FormComponent', FormComponent)
+Vue.component('FormFieldComponent', FormFieldComponent)
 
-Vue.use(VueBCCPlugin)
+Vue.use(VueBCCPlugin, {
+    app: 'app',
+    xmlConfig: require('../app.config.js').xmlConfig,
+})
 <%_ } _%>
 
 Vue.config.productionTip = false

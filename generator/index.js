@@ -174,14 +174,14 @@ function appLoop() {
 }
 
 module.exports = (api, options, rootOptions) => {
-    const vueBCCPlugin = api.hasPlugin('vue-bcc')
-    if (!vueBCCPlugin) {
+    // const vueBCCPlugin = api.hasPlugin('vue-bcc')
+    //if (!vueBCCPlugin) {
         api.extendPackage({
             dependencies: {
                 'vue-bcc': 'file:../vue-bcc',
             },
         })
-    }
+    // }
 
     api.render('./template', {
         ...options

@@ -178,7 +178,7 @@ module.exports = (api, options, rootOptions) => {
     if (!vueBCCPlugin) {
         api.extendPackage({
             dependencies: {
-                'vue-bcc': 'https://github.com/ialopezg/vue-bcc.git'
+                'vue-bcc': 'file:../vue-bcc',
             },
         })
     }

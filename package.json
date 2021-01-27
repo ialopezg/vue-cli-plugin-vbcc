@@ -1,0 +1,16 @@
+{
+  "name": "@ialopezg/vue-cli-plugin-vbcc",
+  "version": "0.0.1",
+  "description": "Base Core Components Plugin for Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Isidro A. Lopez G. <me@ialopezg.com> (https://ialopezg.com)",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "dotenv": "^8.2.0"
+  }
+}

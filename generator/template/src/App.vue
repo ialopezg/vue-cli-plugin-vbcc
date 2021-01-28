@@ -15,7 +15,8 @@
     <ListComponent />
     <ListFieldAbstractComponent :field-object="{}" :row="{}"/>
     <ModalComponent :modal-object="{}" />
-    <NavComponent  nav="sidebar"/>
+    <NavComponent nav="sidebar"/>
+    <PageComponent page-object=""/>
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -40,7 +41,8 @@ import {
     ListComponent,
     ListFieldAbstractComponent,
     ModalComponent,
-    NavComponent
+    NavComponent,
+    PageComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -60,6 +62,7 @@ export default {
     ListComponent,
     ModalComponent,
     NavComponent,
+    Page,
 <%_ } _%>
     HelloWorld
   }

@@ -15,6 +15,7 @@ import {
     FormFieldEnumComponent,
     FormGroupComponent,
     ListComponent,
+    ListFieldAbstractComponent,
     ModalComponent,
 } from 'vue-bcc/index'
 

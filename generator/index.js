@@ -175,9 +175,9 @@ function appLoop() {
 
 module.exports = (api, options, rootOptions) => {
     const utils = require('./utils')(api)
-    const { vueBCCPluginImport } = options
+    const { vueBCCPluginImport, vueBCCPluginUpdate } = options
 
-    if (api.hasPlugin('vue-bcc')) {
+    if (vueBCCPluginUpdate) {
         api.extendPackage({
             dependencies: {
                 'vue-bcc': 'file:../vue-bcc',
@@ -202,6 +202,7 @@ module.exports = (api, options, rootOptions) => {
     }
     api.render({
         './src/App.vue': './template/src/App.vue',
+        './src/components/Home.vue': './template/src/components/Home.vue',
     }, { vueBCCPluginImport })
 
     watchFile(appFile, () => {

@@ -11,7 +11,8 @@
     <FormFieldAbstractComponent validator="required" />
     <FormFieldContainerComponent text="text" />
     <FormFieldEnumComponent :field-object="{}" />
-    <FormGroupComponent />
+    <FormGroupComponent text="group text" />
+    <ListComponent />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -33,6 +34,7 @@ import {
     FormFieldAbstractComponent,
     FormFieldContainerComponent,
     FormGroupComponent,
+    ListComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -48,6 +50,8 @@ export default {
     FilterFieldResourceComponent,
     FormComponent,
     FormFieldComponent,
+    FormGroupComponent,
+    ListComponent,
 <%_ } _%>
     HelloWorld
   }

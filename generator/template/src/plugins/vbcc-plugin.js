@@ -14,7 +14,8 @@ import {
     FormFieldContainerComponent,
     FormFieldEnumComponent,
     FormGroupComponent,
-} from 'vue-bcc'
+    ListComponent
+} from 'vue-bcc/index'
 
 Vue.use(VeeValidate)
 Validator.extend('alpha_spaces_points', {
@@ -33,6 +34,7 @@ Vue.component('FormFieldAbstractComponent', FormFieldAbstractComponent)
 Vue.component('FormFieldContainerComponent', FormFieldContainerComponent)
 Vue.component('FormFieldEnumComponent', FormFieldEnumComponent)
 Vue.component('FormGroupComponent', FormGroupComponent)
+Vue.component('ListComponent', ListComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

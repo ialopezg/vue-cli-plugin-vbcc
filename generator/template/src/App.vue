@@ -8,6 +8,7 @@
     <FilterFieldResourceComponent />
     <FormComponent name="login"></FormComponent>
     <FormFieldComponent />
+    <FormFieldAbstractComponent validator="required" />
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
@@ -25,6 +26,7 @@ import {
     FilterFieldResourceComponent,
     FormComponent,
     FormFieldComponent,
+    FormFieldAbstractComponent
   } from 'vue-bcc/index'
 <%_ } _%>
 

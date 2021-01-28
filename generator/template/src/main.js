@@ -1,3 +1,4 @@
+import VeeValidate from 'vee-validate'
 import Vue from 'vue'
 import App from './App.vue'
 <%_ if (useVueBCCPluginGlobally === 'yes') { _%>
@@ -12,7 +13,11 @@ import {
     FormFieldComponent,
     VueBCCPlugin,
 } from 'vue-bcc/index'
+<%_ } _%>
 
+Vue.use(VeeValidate)
+
+<%_ if (useVueBCCPluginGlobally === 'yes') { _%>
 Vue.component('ActionComponent', ActionComponent)
 Vue.component('ActionListComponent', ActionListComponent)
 Vue.component('FilterComponent', FilterComponent)

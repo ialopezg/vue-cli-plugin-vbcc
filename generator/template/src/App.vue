@@ -15,7 +15,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-<%_ if (useVueBCCPluginGlobally === 'no') { _%>
+<%_ if (vueBCCPluginImport === 'demanded') { _%>
 import {
     ActionComponent,
     ActionListComponent,
@@ -31,7 +31,7 @@ import {
 export default {
   name: 'App',
   components: {
-<%_ if (useVueBCCPluginGlobally === 'no') { _%>
+<%_ if (vueBCCPluginImport === 'demanded') { _%>
     ActionComponent,
     ActionListComponent,
     FilterComponent,

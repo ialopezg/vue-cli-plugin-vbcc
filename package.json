@@ -1,12 +1,24 @@
 {
   "name": "@ialopezg/vue-cli-plugin-vbcc",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "Base Core Components Plugin for Vue",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ialopezg/vue-cli-plugin-vbcc.git"
   },
-  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ElementUI/vue-cli-plugin-element/issues"
+  },
+  "homepage": "https://github.com/ElementUI/vue-cli-plugin-element#readme",
+  "keywords": [
+    "element",
+    "element-ui",
+    "vue",
+    "vue-cli",
+    "plugin",
+    "cli"
+  ],
   "author": "Isidro A. Lopez G. <me@ialopezg.com> (https://ialopezg.com)",
   "license": "MIT",
   "dependencies": {

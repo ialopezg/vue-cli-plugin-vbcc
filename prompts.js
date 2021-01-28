@@ -2,17 +2,13 @@
 
 module.exports = [
     {
-        name: `useVueBCCPluginGlobally`,
+        name: 'vueBCCPluginImport',
         type: 'list',
-        message: 'Do you want to use VueBCC globally?',
+        message: 'How do you want to import vue-bcc dependency?',
         choices: [
-            { name: 'Yes', value: 'yes' },
-            { name: 'No', value: 'no' }
+            { name: 'Globally', value: 'globally' },
+            { name: 'On demand', value: 'demanded' }
         ],
-        default: 'yes',
-        // UI-related prompt properties
-        group: 'Strongly recommended',
-        description: 'Adds example pages, layouts and correct router config',
-        link: 'https://github.com/ktsn/vue-cli-plugin-vbcc#readme'
+        default: 'globally',
     }
 ]

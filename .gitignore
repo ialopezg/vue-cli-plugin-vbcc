@@ -1,1 +1,12 @@
+## Editors and IDE's
+#  Jetbrains Software
+.idea
+*.iml
+
+## Package Managers
+#  NodeJS
 node_modules
+
+## Other files
+#  OSX files
+.DS_Store

@@ -1,8 +1,7 @@
-import VeeValidate, { Validator } from 'vee-validate'
 import Vue from 'vue'
-import App from './App.vue'
-<%_ if (useVueBCCPluginGlobally === 'yes') { _%>
+import VeeValidate, { Validator } from 'vee-validate'
 import {
+    VueBCCPlugin,
     ActionComponent,
     ActionListComponent,
     FilterComponent,
@@ -11,13 +10,13 @@ import {
     FilterFieldResourceComponent,
     FormComponent,
     FormFieldComponent,
-    VueBCCPlugin,
-} from 'vue-bcc/index'
-<%_ } _%>
+} from 'vue-bcc'
 
 Vue.use(VeeValidate)
+Validator.extend('alpha_spaces_points', {
+    validate: (value) => new RegExp(/^[A-Za-z .]+$/u).test(value),
+})
 
-<%_ if (useVueBCCPluginGlobally === 'yes') { _%>
 Vue.component('ActionComponent', ActionComponent)
 Vue.component('ActionListComponent', ActionListComponent)
 Vue.component('FilterComponent', FilterComponent)
@@ -29,16 +28,5 @@ Vue.component('FormFieldComponent', FormFieldComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',
-    xmlConfig: require('../app.config.js').xmlConfig,
+    xmlConfig: require('../../app.config.js').xmlConfig
 })
-
-<%_ } _%>
-Validator.extend('alpha_spaces_points', {
-    validate: (value) => new RegExp(/^[A-Za-z .]+$/u).test(value),
-})
-
-Vue.config.productionTip = false
-
-new Vue({
-    render: h => h(App),
-}).$mount('#app')

@@ -174,19 +174,35 @@ function appLoop() {
 }
 
 module.exports = (api, options, rootOptions) => {
-    // const vueBCCPlugin = api.hasPlugin('vue-bcc')
-    //if (!vueBCCPlugin) {
+    const utils = require('./utils')(api)
+    const { vueBCCPluginImport } = options
+
+    if (api.hasPlugin('vue-bcc')) {
         api.extendPackage({
             dependencies: {
                 'vue-bcc': 'file:../vue-bcc',
-                'vee-validate': '2.2.13',
             },
         })
-    // }
+     }
+    if ('vee-validate') {
 
-    api.render('./template', {
-        ...options
-    })
+        api.extendPackage({
+            dependencies: {
+                'vee-validate': '2.2.15',
+            },
+        })
+    }
+
+    if (vueBCCPluginImport) {
+        api.render({
+            './src/plugins/vbcc-plugin.js': './template/src/plugins/vbcc-plugin.js',
+        })
+
+        api.injectImports(utils.getMainFile(), `import './plugins/vbcc-plugin.js'`)
+    }
+    api.render({
+        './src/App.vue': './template/src/App.vue',
+    }, { vueBCCPluginImport })
 
     watchFile(appFile, () => {
         appLoop()

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <FormFieldEnumComponent :field-object="{}" />
     <ActionComponent :action-item-object="{}" />
     <ActionListComponent :actions-list="[]"/>
     <FilterComponent filter="filter" />

@@ -12,6 +12,7 @@ import {
     FormFieldComponent,
     FormFieldAbstractComponent,
     FormFieldContainerComponent,
+    FormFieldEnumComponent,
 } from 'vue-bcc'
 
 Vue.use(VeeValidate)
@@ -29,6 +30,7 @@ Vue.component('FormComponent', FormComponent)
 Vue.component('FormFieldComponent', FormFieldComponent)
 Vue.component('FormFieldAbstractComponent', FormFieldAbstractComponent)
 Vue.component('FormFieldContainerComponent', FormFieldContainerComponent)
+Vue.component('FormFieldEnumComponent', FormFieldEnumComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

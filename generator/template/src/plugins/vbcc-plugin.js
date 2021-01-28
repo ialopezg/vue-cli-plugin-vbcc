@@ -17,6 +17,7 @@ import {
     ListComponent,
     ListFieldAbstractComponent,
     ModalComponent,
+    NavComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate)
@@ -39,6 +40,7 @@ Vue.component('FormGroupComponent', FormGroupComponent)
 Vue.component('ListComponent', ListComponent)
 Vue.component('ListFieldAbstractComponent', ListFieldAbstractComponent)
 Vue.component('ModalComponent', ModalComponent)
+Vue.component('NavComponent', NavComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

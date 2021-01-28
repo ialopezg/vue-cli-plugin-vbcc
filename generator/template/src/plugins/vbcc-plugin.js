@@ -11,6 +11,7 @@ import {
     FormComponent,
     FormFieldComponent,
     FormFieldAbstractComponent,
+    FormFieldContainerComponent,
 } from 'vue-bcc'
 
 Vue.use(VeeValidate)
@@ -27,6 +28,7 @@ Vue.component('FilterFieldResourceComponent', FilterFieldResourceComponent)
 Vue.component('FormComponent', FormComponent)
 Vue.component('FormFieldComponent', FormFieldComponent)
 Vue.component('FormFieldAbstractComponent', FormFieldAbstractComponent)
+Vue.component('FormFieldContainerComponent', FormFieldContainerComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

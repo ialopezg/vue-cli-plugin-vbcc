@@ -1,4 +1,4 @@
-import VeeValidate from 'vee-validate'
+import VeeValidate, { Validator } from 'vee-validate'
 import Vue from 'vue'
 import App from './App.vue'
 <%_ if (useVueBCCPluginGlobally === 'yes') { _%>
@@ -31,7 +31,11 @@ Vue.use(VueBCCPlugin, {
     app: 'app',
     xmlConfig: require('../app.config.js').xmlConfig,
 })
+
 <%_ } _%>
+Validator.extend('alpha_spaces_points', {
+    validate: (value) => new RegExp(/^[A-Za-z .]+$/u).test(value),
+})
 
 Vue.config.productionTip = false
 

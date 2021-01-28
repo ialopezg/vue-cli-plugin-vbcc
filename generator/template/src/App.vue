@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <FormFieldEnumComponent :field-object="{}" />
     <ActionComponent :action-item-object="{}" />
     <ActionListComponent :actions-list="[]"/>
     <FilterComponent filter="filter" />
@@ -11,6 +10,8 @@
     <FormFieldComponent />
     <FormFieldAbstractComponent validator="required" />
     <FormFieldContainerComponent text="text" />
+    <FormFieldEnumComponent :field-object="{}" />
+    <FormGroupComponent />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -30,7 +31,8 @@ import {
     FormComponent,
     FormFieldComponent,
     FormFieldAbstractComponent,
-    FormFieldContainerComponent
+    FormFieldContainerComponent,
+    FormGroupComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 

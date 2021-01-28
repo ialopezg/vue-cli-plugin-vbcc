@@ -14,7 +14,8 @@ import {
     FormFieldContainerComponent,
     FormFieldEnumComponent,
     FormGroupComponent,
-    ListComponent
+    ListComponent,
+    ModalComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate)
@@ -35,6 +36,8 @@ Vue.component('FormFieldContainerComponent', FormFieldContainerComponent)
 Vue.component('FormFieldEnumComponent', FormFieldEnumComponent)
 Vue.component('FormGroupComponent', FormGroupComponent)
 Vue.component('ListComponent', ListComponent)
+Vue.component('ListFieldAbstractComponent', ListFieldAbstractComponent)
+Vue.component('ModalComponent', ModalComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

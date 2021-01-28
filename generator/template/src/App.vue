@@ -13,6 +13,8 @@
     <FormFieldEnumComponent :field-object="{}" />
     <FormGroupComponent text="group text" />
     <ListComponent />
+    <ListFieldAbstractComponent :field-object="{}" :row="{}"/>
+    <ModalComponent :modal-object="{}" />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -35,6 +37,8 @@ import {
     FormFieldContainerComponent,
     FormGroupComponent,
     ListComponent,
+    ListFieldAbstractComponent,
+    ModalComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -52,6 +56,7 @@ export default {
     FormFieldComponent,
     FormGroupComponent,
     ListComponent,
+    ModalComponent,
 <%_ } _%>
     HelloWorld
   }

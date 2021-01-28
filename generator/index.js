@@ -177,7 +177,7 @@ module.exports = (api, options, rootOptions) => {
     const utils = require('./utils')(api)
     const { vueBCCPluginImport, vueBCCPluginUpdate } = options
 
-    if (vueBCCPluginUpdate) {
+    if (vueBCCPluginUpdate || !api.hasPlugin('vue-bcc')) {
         api.extendPackage({
             dependencies: {
                 'vue-bcc': 'file:../vue-bcc',
@@ -202,7 +202,7 @@ module.exports = (api, options, rootOptions) => {
     }
     api.render({
         './src/App.vue': './template/src/App.vue',
-        './src/components/Home.vue': './template/src/components/Home.vue',
+        './src/components/HelloWorld.vue': './template/src/components/HelloWorld.vue',
     }, { vueBCCPluginImport })
 
     watchFile(appFile, () => {

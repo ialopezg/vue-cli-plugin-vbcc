@@ -179,6 +179,7 @@ module.exports = (api, options, rootOptions) => {
         api.extendPackage({
             dependencies: {
                 'vue-bcc': 'file:../vue-bcc',
+                'vee-validate': 'latest',
             },
         })
     // }

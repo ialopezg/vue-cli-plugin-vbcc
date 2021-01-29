@@ -25,6 +25,7 @@ import {
     SummaryFieldAbstractComponent,
     SummaryFieldArrayComponent,
     SummaryFieldDatetimeComponent,
+    SummaryFieldEnumComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate, {
@@ -57,6 +58,7 @@ Vue.component('SummaryComponent', SummaryComponent)
 Vue.component('SummaryFieldAbstractComponent', SummaryFieldAbstractComponent)
 Vue.component('SummaryFieldArrayComponent', SummaryFieldArrayComponent)
 Vue.component('SummaryFieldDatetimeComponent', SummaryFieldDatetimeComponent)
+Vue.component('SummaryFieldEnumComponent', SummaryFieldEnumComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

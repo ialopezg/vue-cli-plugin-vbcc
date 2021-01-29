@@ -11,7 +11,7 @@
     <FormFieldAbstractComponent validator="required" />
     <FormFieldContainerComponent text="text" />
     <FormFieldEnumComponent :field-object="{}" />
-    <FormGroupComponent text="group text" />
+    <FormGroupComponent text="form group text" />
     <ListComponent />
     <ListFieldAbstractComponent :field-object="{}" :row="{}" />
     <ModalComponent :modal-object="{}" />
@@ -25,6 +25,7 @@
     <SummaryFieldDatetimeComponent :field-object="{}" :value="1980" />
     <SummaryFieldEnumComponent :field-object="{}" :value="1" />
     <SummaryFieldObjectComponent :field-object="{}" :value="30" />
+    <SummaryGroupComponent text="summary group text"/>
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -59,6 +60,7 @@ import {
     SummaryFieldDatetimeComponent,
     SummaryFieldEnumComponent,
     SummaryFieldObjectComponent,
+    SummaryGroupComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -87,6 +89,7 @@ export default {
     SummaryFieldDatetimeComponent,
     SummaryFieldEnumComponent,
     SummaryFieldObjectComponent,
+    SummaryGroupComponent,
 <%_ } _%>
     HelloWorld
   }

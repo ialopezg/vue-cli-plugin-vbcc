@@ -27,6 +27,7 @@ import {
     SummaryFieldDatetimeComponent,
     SummaryFieldEnumComponent,
     SummaryFieldObjectComponent,
+    SummaryGroupComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate, {
@@ -61,6 +62,7 @@ Vue.component('SummaryFieldArrayComponent', SummaryFieldArrayComponent)
 Vue.component('SummaryFieldDatetimeComponent', SummaryFieldDatetimeComponent)
 Vue.component('SummaryFieldEnumComponent', SummaryFieldEnumComponent)
 Vue.component('SummaryFieldObjectComponent', SummaryFieldObjectComponent)
+Vue.component('SummaryGroupComponent', SummaryGroupComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

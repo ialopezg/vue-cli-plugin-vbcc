@@ -18,6 +18,7 @@
     <NavComponent nav="sidebar"/>
     <PageComponent page-object=""/>
     <PaginationComponent  total="100"/>
+    <SearchTextComponent />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -45,6 +46,7 @@ import {
     NavComponent,
     PageComponent,
     PaginationComponent,
+    SearchTextComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -64,7 +66,9 @@ export default {
     ListComponent,
     ModalComponent,
     NavComponent,
-    Page,
+    PageComponent,
+    PaginationComponent,
+    SearchTextComponent,
 <%_ } _%>
     HelloWorld
   }

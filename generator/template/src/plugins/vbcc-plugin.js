@@ -20,6 +20,7 @@ import {
     NavComponent,
     PageComponent,
     PaginationComponent,
+    SearchTextComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate)
@@ -45,6 +46,7 @@ Vue.component('ModalComponent', ModalComponent)
 Vue.component('NavComponent', NavComponent)
 Vue.component('PageComponent', PageComponent)
 Vue.component('PaginationComponent', PaginationComponent)
+Vue.component('SearchTextComponent', SearchTextComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

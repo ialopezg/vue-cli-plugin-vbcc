@@ -13,14 +13,15 @@
     <FormFieldEnumComponent :field-object="{}" />
     <FormGroupComponent text="group text" />
     <ListComponent />
-    <ListFieldAbstractComponent :field-object="{}" :row="{}"/>
+    <ListFieldAbstractComponent :field-object="{}" :row="{}" />
     <ModalComponent :modal-object="{}" />
     <NavComponent nav="sidebar"/>
     <PageComponent page-object=""/>
     <PaginationComponent  total="100"/>
     <SearchTextComponent />
     <SummaryComponent />
-    <SummaryFieldAbstractComponent  field-object="" type="text"  value="1"/>
+    <SummaryFieldAbstractComponent  field-object="" type="text" value="1" />
+    <SummaryFieldArrayComponent field-object="" value="1" />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -51,6 +52,7 @@ import {
     SearchTextComponent,
     SummaryComponent,
     SummaryFieldAbstractComponent,
+    SummaryFieldArrayComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -75,6 +77,7 @@ export default {
     SearchTextComponent,
     SummaryComponent,
     SummaryFieldAbstractComponent,
+    SummaryFieldArrayComponent,
 <%_ } _%>
     HelloWorld
   }

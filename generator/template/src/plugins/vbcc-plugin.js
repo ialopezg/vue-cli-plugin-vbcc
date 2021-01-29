@@ -23,6 +23,7 @@ import {
     SearchTextComponent,
     SummaryComponent,
     SummaryFieldAbstractComponent,
+    SummaryFieldArrayComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate, {
@@ -53,6 +54,7 @@ Vue.component('PaginationComponent', PaginationComponent)
 Vue.component('SearchTextComponent', SearchTextComponent)
 Vue.component('SummaryComponent', SummaryComponent)
 Vue.component('SummaryFieldAbstractComponent', SummaryFieldAbstractComponent)
+Vue.component('SummaryFieldArrayComponent', SummaryFieldArrayComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

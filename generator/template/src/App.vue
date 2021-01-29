@@ -22,6 +22,7 @@
     <SummaryComponent />
     <SummaryFieldAbstractComponent  field-object="" type="text" value="1" />
     <SummaryFieldArrayComponent field-object="" value="1" />
+    <SummaryFieldDatetimeComponent field-object="" value="1980" />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -53,6 +54,7 @@ import {
     SummaryComponent,
     SummaryFieldAbstractComponent,
     SummaryFieldArrayComponent,
+    SummaryFieldDatetimeComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -78,6 +80,7 @@ export default {
     SummaryComponent,
     SummaryFieldAbstractComponent,
     SummaryFieldArrayComponent,
+    SummaryFieldDatetimeComponent,
 <%_ } _%>
     HelloWorld
   }

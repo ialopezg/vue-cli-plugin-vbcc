@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <ActionComponent action-item-object="" />
-    <ActionListComponent actions-list=""/>
+    <ActionComponent :action-item-object="{}" />
+    <ActionListComponent :actions-list="[]"/>
     <FilterComponent filter="filter" />
     <FilterFieldComponent />
     <FilterFieldAbstractComponent type="sdk"/>
@@ -10,20 +10,21 @@
     <FormFieldComponent />
     <FormFieldAbstractComponent validator="required" />
     <FormFieldContainerComponent text="text" />
-    <FormFieldEnumComponent :field-object="" />
+    <FormFieldEnumComponent :field-object="{}" />
     <FormGroupComponent text="group text" />
     <ListComponent />
-    <ListFieldAbstractComponent field-object="" row="" />
-    <ModalComponent modal-object="" />
+    <ListFieldAbstractComponent :field-object="{}" :row="{}" />
+    <ModalComponent :modal-object="{}" />
     <NavComponent nav="sidebar"/>
-    <PageComponent page-object=""/>
-    <PaginationComponent total="100"/>
+    <PageComponent :page-object="{}"/>
+    <PaginationComponent :total="100"/>
     <SearchTextComponent />
     <SummaryComponent />
-    <SummaryFieldAbstractComponent field-object="" type="text" value="1" />
-    <SummaryFieldArrayComponent field-object="" value="1" />
-    <SummaryFieldDatetimeComponent field-object="" value="1980" />
-    <SummaryFieldEnumComponent field-object="" value="1" />
+    <SummaryFieldAbstractComponent :field-object="{}" type="text" :value="1" />
+    <SummaryFieldArrayComponent :field-object="{}" :value="1" />
+    <SummaryFieldDatetimeComponent :field-object="{}" :value="1980" />
+    <SummaryFieldEnumComponent :field-object="{}" :value="1" />
+    <SummaryFieldObjectComponent :field-object="{}" :value="30" />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -57,6 +58,7 @@ import {
     SummaryFieldArrayComponent,
     SummaryFieldDatetimeComponent,
     SummaryFieldEnumComponent,
+    SummaryFieldObjectComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -84,6 +86,7 @@ export default {
     SummaryFieldArrayComponent,
     SummaryFieldDatetimeComponent,
     SummaryFieldEnumComponent,
+    SummaryFieldObjectComponent,
 <%_ } _%>
     HelloWorld
   }

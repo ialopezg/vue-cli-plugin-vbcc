@@ -29,6 +29,7 @@ import {
     SummaryFieldObjectComponent,
     SummaryGroupComponent,
     TabsComponent,
+    ViewComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate, {
@@ -65,6 +66,7 @@ Vue.component('SummaryFieldEnumComponent', SummaryFieldEnumComponent)
 Vue.component('SummaryFieldObjectComponent', SummaryFieldObjectComponent)
 Vue.component('SummaryGroupComponent', SummaryGroupComponent)
 Vue.component('TabsComponent', TabsComponent)
+Vue.component('ViewComponent', ViewComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

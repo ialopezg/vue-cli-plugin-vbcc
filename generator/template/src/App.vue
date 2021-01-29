@@ -16,17 +16,20 @@
     <ListFieldAbstractComponent :field-object="{}" :row="{}" />
     <ModalComponent :modal-object="{}" />
     <NavComponent nav="sidebar"/>
-    <PageComponent :page-object="{}"/>
-    <PaginationComponent :total="100"/>
     <SearchTextComponent />
     <SummaryComponent />
     <SummaryFieldAbstractComponent :field-object="{}" type="text" :value="1" />
-    <SummaryFieldArrayComponent :field-object="{}" :value="1" />
+    <SummaryFieldArrayComponent :field-object="{}" :value="[1]" />
     <SummaryFieldDatetimeComponent :field-object="{}" :value="1980" />
     <SummaryFieldEnumComponent :field-object="{}" :value="1" />
     <SummaryFieldObjectComponent :field-object="{}" :value="30" />
     <SummaryGroupComponent text="summary group text"/>
     <TabsComponent :tabs-list="[]" />
+    <ViewComponent view="login">
+      <PageComponent :page-object="{}">
+        <PaginationComponent :total="100"/>
+      </PageComponent>
+    </ViewComponent>
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -63,6 +66,7 @@ import {
     SummaryFieldObjectComponent,
     SummaryGroupComponent,
     TabsComponent,
+    ViewComponent
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -93,6 +97,7 @@ export default {
     SummaryFieldObjectComponent,
     SummaryGroupComponent,
     TabsComponent,
+    ViewComponent,
 <%_ } _%>
     HelloWorld
   }

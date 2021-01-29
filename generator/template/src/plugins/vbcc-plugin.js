@@ -24,7 +24,9 @@ import {
     SummaryComponent,
 } from 'vue-bcc/index'
 
-Vue.use(VeeValidate)
+Vue.use(VeeValidate, {
+    fieldsBagName: 'validationFields',
+})
 Validator.extend('alpha_spaces_points', {
     validate: (value) => new RegExp(/^[A-Za-z .]+$/u).test(value),
 })

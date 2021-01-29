@@ -26,6 +26,7 @@
     <SummaryFieldEnumComponent :field-object="{}" :value="1" />
     <SummaryFieldObjectComponent :field-object="{}" :value="30" />
     <SummaryGroupComponent text="summary group text"/>
+    <TabsComponent :tabs-list="[]" />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -61,6 +62,7 @@ import {
     SummaryFieldEnumComponent,
     SummaryFieldObjectComponent,
     SummaryGroupComponent,
+    TabsComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -90,6 +92,7 @@ export default {
     SummaryFieldEnumComponent,
     SummaryFieldObjectComponent,
     SummaryGroupComponent,
+    TabsComponent,
 <%_ } _%>
     HelloWorld
   }

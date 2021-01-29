@@ -1,6 +1,6 @@
 {
   "name": "@ialopezg/vue-cli-plugin-vbcc",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "description": "Base Core Components Plugin for Vue",
   "main": "index.js",
   "repository": {

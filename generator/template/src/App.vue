@@ -19,6 +19,7 @@
     <PageComponent page-object=""/>
     <PaginationComponent  total="100"/>
     <SearchTextComponent />
+    <SummaryComponent />
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -47,6 +48,7 @@ import {
     PageComponent,
     PaginationComponent,
     SearchTextComponent,
+    SummaryComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 
@@ -69,6 +71,7 @@ export default {
     PageComponent,
     PaginationComponent,
     SearchTextComponent,
+    SummaryComponent,
 <%_ } _%>
     HelloWorld
   }

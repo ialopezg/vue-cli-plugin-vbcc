@@ -21,6 +21,7 @@ import {
     PageComponent,
     PaginationComponent,
     SearchTextComponent,
+    SummaryComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate)
@@ -47,6 +48,7 @@ Vue.component('NavComponent', NavComponent)
 Vue.component('PageComponent', PageComponent)
 Vue.component('PaginationComponent', PaginationComponent)
 Vue.component('SearchTextComponent', SearchTextComponent)
+Vue.component('SummaryComponent', SummaryComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',

@@ -17,6 +17,7 @@
     <ModalComponent :modal-object="{}" />
     <NavComponent nav="sidebar"/>
     <PageComponent page-object=""/>
+    <PaginationComponent  total="100"/>
 
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -43,6 +44,7 @@ import {
     ModalComponent,
     NavComponent,
     PageComponent,
+    PaginationComponent,
   } from 'vue-bcc/index'
 <%_ } _%>
 

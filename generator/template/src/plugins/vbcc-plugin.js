@@ -19,6 +19,7 @@ import {
     ModalComponent,
     NavComponent,
     PageComponent,
+    PaginationComponent,
 } from 'vue-bcc/index'
 
 Vue.use(VeeValidate)
@@ -43,6 +44,7 @@ Vue.component('ListFieldAbstractComponent', ListFieldAbstractComponent)
 Vue.component('ModalComponent', ModalComponent)
 Vue.component('NavComponent', NavComponent)
 Vue.component('PageComponent', PageComponent)
+Vue.component('PaginationComponent', PaginationComponent)
 
 Vue.use(VueBCCPlugin, {
     app: 'app',
